@@ -13,12 +13,15 @@
  */
 package ejercicio03;
 
-import ejercicio03.entidades.Operacion;
+import ejercicio03.entidad.Operacion;
 
 public class Ejercicio3 {
 
     public static void main(String[] args) {
         Operacion operacion1 = new Operacion().crearOperacion();
-        operacion1.mostrarOperacion(operacion1);
+        operacion1.mostrarSuma(operacion1);
+        operacion1.mostrarResta(operacion1);
+        operacion1.mostrarMultiplicacion(operacion1);
+        operacion1.mostrarDivision(operacion1);
     }
 }

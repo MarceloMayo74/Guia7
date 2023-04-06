@@ -8,7 +8,7 @@
  */
 package ejercicio01;
 
-import ejercicio01.entidades.Libro;
+import ejercicio01.entidad.Libro;
 
 public class Ejercicio1 {
 

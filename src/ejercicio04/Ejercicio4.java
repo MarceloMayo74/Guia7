@@ -8,13 +8,14 @@
  */
 package ejercicio04;
 
-import ejercicio04.entidades.Rectangulo;
+import ejercicio04.entidad.Rectangulo;
 
 public class Ejercicio4 {
-
+    
     public static void main(String[] args) {
         Rectangulo rectangulo1 = new Rectangulo().crearRectangulo();
-        rectangulo1.mostrarRectangulo(rectangulo1);
+        rectangulo1.mostrarArea(rectangulo1);
+        rectangulo1.mostrarPerimetro(rectangulo1);
         rectangulo1.dibujarRectangulo(rectangulo1);
     }
 }

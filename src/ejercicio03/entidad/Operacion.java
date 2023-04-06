@@ -1,4 +1,4 @@
-package ejercicio03.entidades;
+package ejercicio03.entidad;
 
 import java.util.Scanner;
 
@@ -41,11 +41,18 @@ public class Operacion {
         return operacion;
     }
 
-    public void mostrarOperacion(Operacion operacion) {
+    public void mostrarSuma(Operacion operacion) {
         int Suma = operacion.getNumero1() + operacion.getNumero2();
         System.out.println("La suma de los números es: " + Suma);
+
+    }
+
+    public void mostrarResta(Operacion operacion) {
         int Resta = operacion.getNumero1() - operacion.getNumero2();
         System.out.println("La resta de los números es: " + Resta);
+    }
+
+    public void mostrarMultiplicacion(Operacion operacion) {
         int multiplicacion;
         if (operacion.getNumero1() == 0 || operacion.getNumero2() == 0) {
             System.out.println("Se multiplicó por 0, por lo que el resultado es " + 0);
@@ -53,14 +60,15 @@ public class Operacion {
             multiplicacion = operacion.getNumero1() * operacion.getNumero2();
             System.out.println("La multiplicacion de los números es: " + multiplicacion);
         }
-        double num1 = operacion.getNumero1();
-        double num2 = operacion.getNumero2();
+    }
+
+    public void mostrarDivision(Operacion operacion) {
         double division;
         if (operacion.getNumero2() == 0) {
             System.out.println("Se dividió por 0, por lo que el resultado es " + 0 + ". Error en la operación.");
         } else {
-            division = num1 / num2;
-            System.out.println("La multiplicacion de los números es: " + division);
+            division = operacion.getNumero1() / operacion.getNumero2();
+            System.out.println("La division de los números es: " + division);
 
         }
     }

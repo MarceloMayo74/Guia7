@@ -1,4 +1,4 @@
-package ejercicio01.entidades;
+package ejercicio01.entidad;
 
 import java.util.Scanner;
 

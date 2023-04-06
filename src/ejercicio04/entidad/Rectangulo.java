@@ -1,4 +1,4 @@
-package ejercicio04.entidades;
+package ejercicio04.entidad;
 
 import java.util.Scanner;
 
@@ -42,15 +42,18 @@ public class Rectangulo {
 
     }
 
-    public void mostrarRectangulo(Rectangulo rectangulo) {
+    public void mostrarArea(Rectangulo rectangulo) {
         int superficie = rectangulo.getBase() * rectangulo.getAltura();
         System.out.println("El area del rectángulo es: " + superficie);
+    }
+
+    public void mostrarPerimetro(Rectangulo rectangulo) {
         int perimetro = (rectangulo.getBase() + rectangulo.getAltura()) * 2;
         System.out.println("El perimetro del rectángulo es: " + perimetro);
     }
 
     public void dibujarRectangulo(Rectangulo rectangulo) {
-        for (int i = 1; i <= rectangulo.getAltura() ; i++) {
+        for (int i = 1; i <= rectangulo.getAltura(); i++) {
             for (int j = 1; j <= rectangulo.getBase(); j++) {
                 if (i == 1 || i == rectangulo.getAltura() || j == 1 || j == rectangulo.getBase()) {
                     System.out.print(" * ");

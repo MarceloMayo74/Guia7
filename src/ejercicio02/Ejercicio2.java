@@ -13,12 +13,13 @@
  */
 package ejercicio02;
 
-import ejercicio02.entidades.Circunferencia;
+import ejercicio02.entidad.Circunferencia;
 
 public class Ejercicio2 {
-
+    
     public static void main(String[] args) {
         Circunferencia circunferencia1 = new Circunferencia().crearCircunferencia();
-        circunferencia1.mostrarCircunferencia(circunferencia1);
+        circunferencia1.mostrarArea(circunferencia1);
+        circunferencia1.mostrarPerimetro(circunferencia1);
     }
 }
